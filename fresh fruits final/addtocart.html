@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link rel="stylesheet" type="text/css" href="Grid.css" />
+    <title>add to cart</title>
+  </head>
+  <body class="all">
+    <h1 class="">cart</h1>
+    <p id="hello"></p>
+
+    <div id="cart-content" class="carto"></div>
+    <button type="submit" class="paybtn">
+      <a href="register.html" class="order2">order now</a>
+    </button>
+  </body>
+  <script src="index.js"></script>
+  <script>
+    const data = JSON.parse(localStorage.getItem("cart"));
+
+    for (const eachItem in data) {
+      let cartContent = document.getElementById("cart-content");
+      console.log(cartContent);
+
+      cartContent.innerHTML += `<div class="item1">
+        
+        <p class="itemcolor"> itemname:${eachItem}</p><br>
+        
+      <img id="myimage"src="${
+        data[eachItem]["image"]
+      }" width="200px" height="200px" />
+     <p class="numberofitem">number of items:${data[eachItem]["count"]}</p>
+     <p class="numberofitem">${[eachItem]} total price:${
+        data[eachItem]["total"]
+      }</p>
+      
+      
+    </div>`;
+    }
+    console.log(t);
+  </script>
+</html>

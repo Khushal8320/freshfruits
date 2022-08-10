@@ -1,0 +1,20 @@
+.maindiv {
+  width: 70%;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("f1.png");
+  background-size: 100% 100%;
+  box-shadow: 1px 1px 10px 5px orange;
+  animation: slider 3s infinite linear;
+}
+@keyframes slider {
+  0% {
+    background-image: url("f1.png");
+  }
+  20% {
+    background-image: url("f2.png");
+  }
+}

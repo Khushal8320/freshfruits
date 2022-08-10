@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login page</title>
+    <link rel="stylesheet" type="text/css" href="login.css" />
+  </head>
+  <body>
+    <div class="log">
+      <h1>log in to your account</h1>
+      <label for="username">Email</label><br />
+      <input
+        type="text"
+        name="userdata"
+        id="useremail"
+        class="userdata1"
+        placeholder="xyz@gmail.com"
+      /><br />
+      <label for="password">Password</label><br />
+      <input
+        type="password"
+        id="userpassword"
+        name="password"
+        class="userpass"
+        placeholder="Enter Your Password"
+      /><br />
+      <button type="submit" onclick="functionclick()" class="btn">Log in</button
+      ><br />
+      <ul class="unorder">
+        <li><a href="register.html" class="anc">don't have account?</a></li>
+        <li>
+          <a href="signup.html" target="_blank" class="anc">forget password</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+  <script>
+    let useremail1;
+    let userpassword1;
+    // let arr = [];
+    // let userdata;
+    let obj = [];
+    let final = [];
+
+    function functionclick() {
+      useremail1 = document.getElementById("useremail");
+      userpassword1 = document.getElementById("userpassword");
+
+      // localStorage.setItem("useremail1", useremail1.value);
+      // localStorage.setItem("userpassword1", userpassword1.value);
+
+      obj.push({ user: useremail1.value, pass1: userpassword1.value });
+      let man = { user: useremail1.value, pass1: userpassword1.value };
+      // store();
+      let dec = localStorage.setItem("use", JSON.stringify(man));
+      final.push(localStorage.getItem("use"));
+
+      for (let i = 0; i < obj.length; i++) {
+        if (obj[i].user == useremail1) {
+          alert("you have already login");
+        }
+      }
+
+      return useremail1.value, userpassword1.value;
+    }
+
+    //   var person = { user: `${useremail1}`, pass: `${userpassword1}` };
+    //   localStorage.setItem("userdata", JSON.stringify(person));
+    //   console.log(person);
+    //   arr.push(person);
+    //   return arr;
+    // }
+    // console.log(localStorage);
+    // console.log(Object);
+  </script>
+</html>

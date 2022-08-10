@@ -1,0 +1,61 @@
+* {
+  color: #fff;
+
+  background-image: url("Screenshot\ \(52\).png");
+}
+h1 {
+  text-transform: capitalize;
+}
+.log {
+  color: #fff;
+  align-items: center;
+  display: block;
+  margin-left: 30%;
+  width: 40%;
+  text-align: center;
+  margin-top: 100px;
+  height: 450px;
+  border: 1px solid black;
+  border-radius: 20px;
+  opacity: 0.9;
+  font-family: sans-serif;
+}
+.userdata1 {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 0.7cm;
+  opacity: 1.1;
+}
+.userpass {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 0.7cm;
+}
+.btn {
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  margin-top: 50px;
+  width: 50%;
+}
+
+.btn:hover {
+  color: rgb(255, 139, 158);
+}
+
+.unorder {
+  display: inline-block;
+  margin-top: 50px;
+}
+.unorder li {
+  list-style: none;
+  display: inline;
+  margin-right: 40px;
+  text-decoration: none;
+}
+.anc {
+  text-transform: capitalize;
+}

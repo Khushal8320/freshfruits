@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="payment.css" />
+    <link rel="stylesheet" type="text/css" href="grid.css" />
+
+    <title>payment form</title>
+  </head>
+  <body>
+    <h1>payment form</h1>
+
+    <form>
+      <input type="radio" name="radio" />
+      <p class="card">credit/debit card</p>
+       <div class="border">
+      <div class="creditcard">
+        <div class="cards">
+          <p>accepted card</p>
+
+          <img src="visa.png" heigth="40px" width="40px" />
+          <img src="master.png" height:="50px" width="50px">
+          <img src="rupay2.jpg" height="30px" width="40px" />
+        </div>
+        <ul class="payment">
+          <div class="col span-1-of-2 credit">
+            <li>
+              <label for="cardnumber" class="space">card number:</label>
+            </li>
+            <li><label for="date" class="space">expiry date:</label></li>
+            <li>
+              <label for="cardholder name" class="space"
+                >cardholder name:</label
+              >
+            </li>
+
+
+            <li><label for="cvv" class="space">cvv:</label></li>
+          </div>
+          <div class="col span-1-of-2">
+            <li><input type="number" name="cardnumber" required /></li>
+            <br />
+            <li><input type="date" name="date" class="low" /></li>
+            <br />
+            <li><input type="text" name="ccode" class="low" max="3" /></li>
+            <br />
+            <li><input type="text" name="cname" /></li>
+            <br />
+          </div>
+            
+          </div>
+          <br>
+        </ul>
+        <div class="upii">
+          <p>upi:</p>
+          <input type="text" name="text">
+        </div>
+      </div>
+    
+    </form>
+    
+  </body>
+</html>
